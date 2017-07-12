@@ -2,6 +2,17 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
+## Wishlist
+
+1.  ~~Add event bindings to hide/show edit forms in the Admin dashboard.~~
+2.  ~~Add CSS rules to alter the color of areas that behave like links when the cursor is hovered over them. This helps users better understand what is "clickable" and what isn't.~~
+3.  Begin offering more than just Albums, and include different routes to display different types of inventory.
+4.  Add a price property to each item you sell.
+5.  Implement pipes to filter by price, type of object, or other properties.
+6.  Allow users to add items to a cart (Hint: Services make great shopping carts!).
+7.  Allow users to visit their cart, and "check out". They should receive a total cost for the order, and perhaps even a receipt.
+8.  Add images, and styles throughout. Consider a design of your own invention, or emulate the general design of your favorite online store.
+
 ## Project Build
 Download from [repo](https://github.com/GrapeSalad/online-store-test.git)
 Run `ng -v` to ensure than your Angular is version 4.
@@ -27,19 +38,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
 
 ## Further help
 
