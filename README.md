@@ -42,3 +42,26 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+#### SELF INSTRUCTION
+
+**Project Creation**
+`ng new online-store`
+
+ENSURE `import './polyfills.ts';` is in the src/main.ts file
+
+`npm init`
+`bower init`
+
+INSTALL BOWER DEPENDENCIES <br>
+`bower install bootstrap --save` <br>
+`bower install jquery --save`
+
+Add bower to the .gitignore file
+
+`ng serve`
+
+`ng g component` component-name <br>
+`ng g pipe` pipe-name <br>
+`ng g class` class-name.model

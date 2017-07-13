@@ -1,8 +1,15 @@
 <h2>Marketplace</h2>
-
-<div *ngFor="let album of albums | async" class="panel panel-default">
+<div>
+  <select (change)="onChange($event.target.value)">
+    <option value="All" selected="selected"> All Genres </option>
+    <option value="Classic Rock"> Classic Rock </option>
+    <option value="Folk Rock"> Folk Rock </option>
+    <option value="Mathcore"> Mathcore </option>
+  </select>
+</div>
+<div *ngFor="let album of albums | async | sort:filterBySelector" class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(album)"class="clickable"><em>{{album.title}}</em> by {{album.artist}}</h3>
+    <h3 (click)="goToDetailPage(album)"class="clickable"><em>{{album.title}}</em> by {{album.artist}} | {{album.genre}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       {{album.description}}
       <hr>

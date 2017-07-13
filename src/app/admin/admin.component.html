@@ -17,11 +17,17 @@
       </div>
 
       <div>
+        <label>Album Genre:</label>
+        <br>
+        <input #newGenre>
+      </div>
+
+      <div>
         <label>Album Description:</label>
         <br>
         <textarea #newDescription></textarea>
       </div>
-      <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+      <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newGenre.value); newTitle.value=''; newArtist.value=''; newDescription.value=''; newGenre.value=''">Add</button>
     </div>
   </div>
 </div>
